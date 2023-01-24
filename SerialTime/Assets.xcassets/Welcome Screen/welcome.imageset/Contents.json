@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "serialy-geroi-aktery-fon.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "serialy-geroi-aktery-fon 1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "serialy-geroi-aktery-fon 2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
