@@ -77,6 +77,7 @@ extension UICollectionView {
         let layoutSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.1), heightDimension: .absolute(30))
         let containerAnchor = NSCollectionLayoutAnchor(edges: [.bottom], absoluteOffset: CGPoint(x: 0, y: 10))
         let bannerItem = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: layoutSize, elementKind: Constants.newBannner, containerAnchor: containerAnchor)
+        // stick upper the cell
         bannerItem.zIndex = 2
         // item
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(fraction), heightDimension: .fractionalHeight(1))

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1A66FE29815E2E0035DE64 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CE1A66FD29815E2E0035DE64 /* .gitignore */; };
 		CE21FE5B297AB4DD004431DB /* Colors and Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21FE5A297AB4DD004431DB /* Colors and Fonts.swift */; };
 		CE21FE5D297ACEF0004431DB /* Buttons and Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21FE5C297ACEEF004431DB /* Buttons and Labels.swift */; };
 		CE21FE5F297AD345004431DB /* Custom Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE21FE5E297AD345004431DB /* Custom Views.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE1A66FD29815E2E0035DE64 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		CE21FE5A297AB4DD004431DB /* Colors and Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors and Fonts.swift"; sourceTree = "<group>"; };
 		CE21FE5C297ACEEF004431DB /* Buttons and Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Buttons and Labels.swift"; sourceTree = "<group>"; };
 		CE21FE5E297AD345004431DB /* Custom Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom Views.swift"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		CE7249A5295DBCFE00B6E0B7 /* SerialTime */ = {
 			isa = PBXGroup;
 			children = (
+				CE1A66FD29815E2E0035DE64 /* .gitignore */,
 				CE7249A6295DBCFE00B6E0B7 /* AppDelegate.swift */,
 				CE7249A8295DBCFE00B6E0B7 /* SceneDelegate.swift */,
 				CE7E58FC296EF0B400B16AA5 /* Interface */,
@@ -218,6 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1A66FE29815E2E0035DE64 /* .gitignore in Resources */,
 				CE7249B3295DBD0000B6E0B7 /* LaunchScreen.storyboard in Resources */,
 				CE7249B0295DBD0000B6E0B7 /* Assets.xcassets in Resources */,
 				CE7249AE295DBCFE00B6E0B7 /* Main.storyboard in Resources */,
@@ -403,6 +407,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -435,6 +440,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
