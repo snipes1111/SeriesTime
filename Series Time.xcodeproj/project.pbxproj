@@ -103,6 +103,7 @@
 		CE72499A295DBCFE00B6E0B7 = {
 			isa = PBXGroup;
 			children = (
+				CE1A66FD29815E2E0035DE64 /* .gitignore */,
 				CE7249A5295DBCFE00B6E0B7 /* SerialTime */,
 				CE7249A4295DBCFE00B6E0B7 /* Products */,
 			);
@@ -119,7 +120,6 @@
 		CE7249A5295DBCFE00B6E0B7 /* SerialTime */ = {
 			isa = PBXGroup;
 			children = (
-				CE1A66FD29815E2E0035DE64 /* .gitignore */,
 				CE7249A6295DBCFE00B6E0B7 /* AppDelegate.swift */,
 				CE7249A8295DBCFE00B6E0B7 /* SceneDelegate.swift */,
 				CE7E58FC296EF0B400B16AA5 /* Interface */,
