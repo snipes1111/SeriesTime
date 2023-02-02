@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol DetailViewControllerDelegate {
+protocol DetailViewControllerDelegate: AnyObject {
     func refreshData(detailVC: DetailViewController)
 }
 
@@ -15,7 +15,7 @@ class DetailViewController: UIViewController {
     // save settings
     var keyForDetailVC: String = ""
     let userSettings = UserDefaults.standard
-    var delegate: DetailViewControllerDelegate?
+    weak var delegate: DetailViewControllerDelegate?
     // interface
     var headerView = UIView.roundAndShadowView()
     var imageView = UIImageView.seriesImageView()
