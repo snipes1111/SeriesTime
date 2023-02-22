@@ -126,7 +126,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         detailVC.delegate = self
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
-    
+    // customize edit method for cell
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         
@@ -218,7 +218,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         }
     }
     
-    // make title change color
+    // dynamic title color
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let distanceToTop = -scrollView.contentOffset.y
         guard let navBarMaxY = self.navigationController?.navigationBar.frame.maxY else { return }
@@ -238,7 +238,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
 }
 
 extension ViewController: UINavigationControllerDelegate {
-    
+    // animation transition
     func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         if operation == .push { return transitionManager }
         return nil

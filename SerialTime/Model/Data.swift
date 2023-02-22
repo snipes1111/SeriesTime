@@ -16,9 +16,7 @@ struct SeriesItems {
         array.append(Series(image: "cosmic", name: "Space Force", season: 1, episode: 1))
         array.append(Series(image: "papa", name: "The Young Pope", season: 1, episode: 1))
         array.append(Series(image: "rick", name: "Rick and Morty", season: 1, episode: 1))
-//        guard let firstSeries = array.first, let lastSerises = array.last else { return array }
-//        array.append(firstSeries)
-//        array.insert(lastSerises, at: 0)
+
         return array
     }()
     
@@ -29,9 +27,7 @@ struct SeriesItems {
         array.append(Series(image: "supernatural", name: "Supernatural", season: 1, episode: 1))
         array.append(Series(image: "deryl", name: "The Walking Dead", season: 1, episode: 1))
         array.append(Series(image: "detective", name: "True Detective", season: 1, episode: 1))
-//        guard let firstSeries = array.first, let lastSerises = array.last else { return array }
-//        array.append(firstSeries)
-//        array.insert(lastSerises, at: 0)
+
         return array
     }()
     

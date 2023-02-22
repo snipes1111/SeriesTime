@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 extension UIView {
+    
     static func roundAndShadowView() -> UIView {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -21,6 +22,17 @@ extension UIView {
         view.layer.shadowRadius = 4
         return view
     }
+    
+    func makeGradient(primary colorOne: UIColor, secondary colorTwo: UIColor) {
+        let gradient = CAGradientLayer()
+        gradient.frame = self.frame
+        gradient.colors = [colorOne.cgColor, colorTwo.cgColor]
+        gradient.locations = [0.0, 1.0]
+        gradient.startPoint = CGPoint(x: 0, y: 0)
+        gradient.endPoint = CGPoint(x: 0, y: 1)
+        self.layer.insertSublayer(gradient, at: 0)
+    }
+    
 }
 
 extension UIImageView {
@@ -119,7 +131,28 @@ extension UICollectionView {
         let layout = UICollectionViewCompositionalLayout(section: section)
         layout.register(BackgroundSectionView.self, forDecorationViewOfKind: Constants.backgroundId)
         let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collection.backgroundColor = UIColor.collectionViewBackground
+        collection.addGradientBackground(startColor: .primaryGradientColor, endColor: .secondaryGradientColor)
         return collection
+    }
+    
+    // extens for making gradient
+    func addGradientBackground(startColor: UIColor, endColor: UIColor) {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [startColor.cgColor, endColor.cgColor]
+        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
+        gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)
+        gradientLayer.frame = CGRect(origin: .zero, size: bounds.size)
+        
+        let backgroundView = UIView()
+        backgroundView.layer.insertSublayer(gradientLayer, at: 0)
+        self.backgroundView = backgroundView
+        
+        // Adjust the frame of the gradient layer when the collection view is laid out
+        collectionViewLayout.invalidateLayout()
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            gradientLayer.frame = CGRect(origin: .zero, size: self.bounds.size)
+        }
     }
 }

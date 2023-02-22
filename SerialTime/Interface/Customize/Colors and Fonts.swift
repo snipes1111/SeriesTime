@@ -12,6 +12,19 @@ extension UIColor {
     static let detailVcBackgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     static let seriesBlackTextColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     static let collectionViewBackground = #colorLiteral(red: 0.1294117868, green: 0.1294117868, blue: 0.1294117868, alpha: 1)
+    
+    static let primaryGradientColor = UIColor(
+        red: 75/255,
+        green: 75/255,
+        blue: 75/255,
+        alpha: 1
+    )
+    static let secondaryGradientColor = UIColor(
+        red: 225/255,
+        green: 225/255,
+        blue: 225/255,
+        alpha: 1
+    )
 }
 
 extension UIFont {
